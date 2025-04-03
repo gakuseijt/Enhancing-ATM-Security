@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Created</title>
+</head>
+<body>
+    <h2>Hello {{ user.first_name }},</h2>
+    
+    <p>Your account has been successfully created on <strong>{{ sitename }}</strong>.</p>
+    
+    <p><strong>Important:</strong> Your account was assigned a temporary password. For security reasons, please reset your password immediately.</p>
+    
+    <p>Click the link below to reset your password:</p>
+    
+    <p><a href="{{ reset_password_link }}" style="background-color: #008CBA; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px;">Reset Password</a></p>
+
+    <p>If you did not expect this, please ignore this email or contact support.</p>
+
+    <p>Best regards,</p>
+    <p>The {{ sitename }} Team</p>
+</body>
+</html>
